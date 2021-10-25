@@ -9,7 +9,8 @@ body {
     margin: 0 auto;
     padding: 0 5px;
 }
-.header{
+/*nav*/
+.nav{
     display: flex;
     align-items: center;
     padding-top: 13px;
@@ -75,6 +76,8 @@ body {
     color: #000000;
     padding: 4px;
 }
+
+/*header*/
 .slide{
     border-radius: 20px;
     min-height: 400px;
@@ -142,13 +145,15 @@ body {
 
 .promo{
     display:flex;
-    margin-bottom: 110px;
+    justify-content: space-between;
+    margin: -20px;
 }
 .card{
     border-radius: 20px;
     min-height: 380px;
-    /*max-width: 570px;*/
-    flex: 1;
+    max-width: 570px;
+    margin: 20px;
+    flex: 50%;
     padding-left: 30px;
     display: flex;
     position: relative;
@@ -176,7 +181,6 @@ body {
     background-image: url('../img/min-use.png');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 54px;
 }
 .card-content{
     max-width: 250px;
@@ -221,4 +225,275 @@ body {
     margin-top: 25px;
     color: #5F5F61;
     background: #FFFFFF;
+}
+
+/*main*/
+.main {
+    margin-top: 100px;
+}
+.delivery{
+    padding-top: 10px;
+    margin-bottom: 100px;
+}
+.main-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 23px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.delivery-food-content{
+    padding-top: 47px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.food-card{
+    flex: 22%;
+    margin: 15px;
+    position: relative;
+    height: 182px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.food-text-light{
+    background-color: gray;
+    color: #fff;
+}
+.card-healh{
+    background-image: url('../img/delivery/healh.jpg');
+}
+.food-text {
+    position: absolute;
+    top: 16px;
+    left: 11px;
+    border-radius: 30px;
+    padding: 5px 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.text-healh{
+    background-color: #D0FD89;
+}
+.text-black{
+    color: #49494F;
+}
+.text-vegetable{
+    background-color: #AEBC41;
+}
+.card-vegetable{
+    background-image: url('../img/delivery/vegetable.jpg');
+}
+.text-meat{
+    background-color: #B86B78;
+}
+.card-meat{
+    background-image: url('../img/delivery/meat.jpg');
+}
+.text-bird{
+    background-color: #D68334;
+}
+.card-bird{
+    background-image: url('../img/delivery/bird.jpg');
+}
+.text-fish{
+    background-color: #CD6255;
+}
+.card-fish{
+    background-image: url('../img/delivery/fish.jpg');
+}
+.text-baby{
+    background-color: #FFFDBF;
+}
+.card-baby{
+    background-image: url('../img/delivery/baby.jpg');
+}
+.text-parents{
+    background-color: #F6FDC8;
+}
+.card-parents{
+    background-image: url('../img/delivery/parents.jpg');
+}
+.text-festive{
+    background-color: #FEF7FE;
+}
+.card-festive{
+    background-image: url('../img/delivery/festive.jpg');
+
+}
+
+.food-categories{
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.food-categories-tabs{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.tabs-item:not(:first-child){
+    margin-left: 54px;
+}
+.tabs-link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494F;
+    text-decoration: none;
+}
+.active {
+    color: #F37321;
+}
+.tabs-content{
+    display: flex;
+    margin: -17px;
+}
+.tabs-card{
+    margin: 17px;
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+}
+.tabs-image{
+    max-width: 100%;
+}
+.tabs-card-content{
+    padding: 21px 24px;
+}
+.tabs-title{
+    margin: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+.tabs-descriptions{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    color: #B9B9BE;
+    margin-top: 13px;
+    margin-bottom: 36px;
+}
+.tabs-info{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.tabs-price{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 23px;
+    color: #4B4B51;
+    display: block;
+    margin-bottom: 5px;
+}
+.tabs-weight{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #AAAAB1;
+}
+.button-outline{
+    cursor: pointer;
+    color: #F37321;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    border: 2px solid #F37321;
+    padding: 15px 25px;
+    background-color: transparent;
+}
+.button-center{
+    margin: auto;
+    margin-top: 60px;
+    padding: 15px 105px;
+    display: block;
+    cursor: pointer;
+}
+.benefits{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+.benefits-title{
+    margin-bottom: 50px;
+}
+.benefits-content{
+    display: flex;
+    margin: -17px;
+}
+.benefits-card{
+    margin: 17px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    max-width: 270px;
+    padding: 30px 35px;
+    text-align: center;
+}
+.benefits-card-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 34px;
+    margin-bottom: 13px;
+}
+.benefits-descriptions{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #49494F;
+    margin: 0;
+}
+
+/*footer*/
+.footer{
+    background-color: #F6F6F6;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.footer-wrapper{
+    display: flex;
+    align-items: center;
+}
+.footer-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+.footer-link:not(:last-child){
+    margin-right: 50px;
+}
+.footer-logo{
+    margin-right: 50px;
+}
+.footer-socials{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.socials-link{
+    text-decoration: none;
+}
+.socials-link:not(:last-child){
+    margin-right: 20px;
 }
