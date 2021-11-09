@@ -5,7 +5,7 @@
 - HTML
 - CSS
 - JavaScript
-- Normalize.css
+- Swiper.js
 - SVG Sprites
 
 ### Адаптивность под мобильные устройства
